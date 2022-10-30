@@ -1,4 +1,4 @@
-# ONAP-Auto-Deploy
+# ONAP-Auto-Deploy 實作版繁中
 - Automated deployment and testing Using SMO package and ONAP Python SDK
 - 簡報：https://reurl.cc/oZLy9D
 
