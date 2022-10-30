@@ -82,9 +82,11 @@ git version 2.17.1
 ### 安裝
 從以下 gerrit 下載 it/dep 儲存庫：
 執行下列三條命令
-- $ mkdir workspace && cd workspace
-- $ git clone --recurse-submodules https://gerrit.o-ran-sc.org/r/it/dep.git
-- $ cd dep
+```cmd=
+$ mkdir workspace && cd workspace
+$ git clone --recurse-submodules https://gerrit.o-ran-sc.org/r/it/dep.git
+$ cd dep
+```
 
 請注意，您需要添加 recurse-submodules flag 因為部分的 git submodules 要指向已存在的相關圖表（ONAP）。
 安裝非常簡單，儲存庫中提供了幾個實用程式腳本，允許用戶獨立設定所有/部分組件。
