@@ -1,6 +1,6 @@
 # ONAP-Auto-Deploy
-Automated deployment and testing Using SMO package and ONAP Python SDK
-簡報：https://docs.google.com/presentation/d/14kV9UfM3LqL7fh4FAUfQnYF3gjlbq3Nm/edit?usp=share_link&ouid=113296565415234841307&rtpof=true&sd=true
+- Automated deployment and testing Using SMO package and ONAP Python SDK
+- 簡報：https://reurl.cc/oZLy9D
 
 ## Driver
 自動化是當今的關鍵，部署和測試 需要具備可重複性及可移植性。
