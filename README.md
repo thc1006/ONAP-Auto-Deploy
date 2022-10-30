@@ -135,15 +135,15 @@ Unit Test 它們通常在 Unit 的級別來用來驗證 ORAN SDK 方法，每次
 
 ### 4. Demo Recording	
 Plan:
-What is the SMO package 
-smo-package1：https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package1.mp4?version=1&modificationDate=1648066446155&api=v2
-smo-package2: https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package2.mp4?version=1&modificationDate=1648066105178&api=v2
-smo-package3: https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package3.mp4?version=1&modificationDate=1648066291100&api=v2
-What is ONAP Python SDK
+- What is the SMO package 
+  - smo-package1：https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package1.mp4?version=1&modificationDate=1648066446155&api=v2
+  - smo-package2: https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package2.mp4?version=1&modificationDate=1648066105178&api=v2
+  - smo-package3: https://wiki.o-ran-sc.org/download/attachments/47746045/.xdp_smo-package3.mp4?version=1&modificationDate=1648066291100&api=v2
+- What is ONAP Python SDK
 ONAP-Python-SDK4: https://wiki.o-ran-sc.org/download/attachments/47746045/onappython-sdk.mp4?version=1&modificationDate=1647618959002&api=v2
-- What is ORAN Python SDK
-- How to execute the SMO usecase tests
-- SMO Nomad/ephemeral CICD jenkins
+  - What is ORAN Python SDK
+  - How to execute the SMO usecase tests
+  - SMO Nomad/ephemeral CICD jenkins
 
 ## 參考
 https://wiki.o-ran-sc.org/display/OAM/OAM+Architecture#
