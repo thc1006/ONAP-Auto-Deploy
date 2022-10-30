@@ -60,7 +60,7 @@ Jenkins 實例將充當 Meta 執行器來編排部署並執行一組測試。
 - Ubuntu 20.04 LTS（使用 18.04 LTS 進行測試）
 ### 須執行命令
 
-```bash
+```cmd=
 $ cat /etc/os-release
 NAME="Ubuntu" 
 VERSION="18.04.6 LTS (Bionic Beaver)“
@@ -75,7 +75,7 @@ UBUNTU_CODENAME=bionic
 確保您的使用者帳戶有足夠的權限來執行下列的命令，有些可能會需要您授予 sudo 權限換到有權限的帳戶，以執行這些命令。
 
 ### 執行命令
-```bash
+```cmd=
 $ git --version
 git version 2.17.1
 ```
