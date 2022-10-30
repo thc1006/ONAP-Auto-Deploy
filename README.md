@@ -151,4 +151,3 @@ ONAP-Python-SDK4: https://wiki.o-ran-sc.org/download/attachments/47746045/onappy
 
 ## 參考
 https://wiki.o-ran-sc.org/display/OAM/OAM+Architecture#
-[易普斯龍](https://blog.csdn.net/qq43748322)
