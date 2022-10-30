@@ -4,18 +4,19 @@
 
 ## Driver
 自動化是當今的關鍵，部署和測試 需要具備可重複性及可移植性。
-為了使用 ORAN SC 軟體實現一定程度的自動化，我們採取了以下步驟：
-- 創建一個簡單的部署方法，重用 ONAP 已完成的工作：參見 SMO 包 (https://jira.onap.org/browse/REQ-887)
-- 重用在 ONAP 中已經成功使用的測試自動化工具：參見 Python-SDK (https://python-onapsdk.readthedocs.io/en/master/)
-- 擴展部署機制，以提供一個獨立的、可移植的設定，以驗證各類型部署的使用範例（稱為“flavors”）
-最終目標是為 O-RAN SC 社群提供一種以最低基本需求，來部署 SMO 及其測試環境的方法，最終此設定可用於 lab 以自動驗證程式碼更改，並直接在程式碼審查工具中報告問題。
-本 wiki 中所描述的設定絕不是封閉的，由於所選的所有工具有靈活性，所以它可以輕鬆擴展。
+為了使用 ORAN SC 軟體實現一定程度的自動化，所以使用了以下步驟：
+- 創建一個簡單的部署方法，重用 ONAP 已完成的工作：詳見 SMO 包 (https://jira.onap.org/browse/REQ-887)
+- 重用在 ONAP 中已經成功使用的測試自動化工具：詳見 Python-SDK (https://python-onapsdk.readthedocs.io/en/master/)
+- 擴展部署機制，以提供一個獨立的、可移植的設定，以驗證各類型部署的使用範例（稱為 “flavors” ）//這我真的不知道中文的對應名詞 嗚嗚嗚
+目標是為 O-RAN SC 社群提供一種可以以最低基本需求，來部署 SMO 及其測試環境的方法，最終此設置可用於 lab 以自動驗證程式碼更改，並直接在程式碼審查工具中報告問題。
+本文中所敘述的配置不是強制制式化的的，所選的所有工具有高靈活性，所以可以輕鬆擴展。
 
 ## SMO Package based on ONAP
-SMO 套件可在 “it/dep” 儲存庫中的 ORAN gerrit 上訪問：
+SMO 套件可在 “it/dep” 儲存庫中的 ORAN gerrit 上 access：
 https://gerrit.o-ran-sc.org/r/gitweb?p=it/dep.git;a=tree;f=smo-install;h=2e4539d6c3c2e2a274d1913c89df371c956f0793;hb=HEAD 
 
-它是基於 ONAP OOM 儲存庫，因為它被用作 Git Submodule。ONAP 圖表沒有改變使用，也沒有重新定義，但顯然是通過使用 Helm 覆蓋機制進行設定的。
+它是基於 ONAP OOM 儲存庫，因為它被用作 Git Submodule。
+ONAP 圖表沒有改變使用，也沒有重新定義，但顯然是通過使用 Helm 覆蓋機制進行設定的。
 
 ORAN 圖表被主要用於定義部分 NON RT RIC ，其他圖表可以稍後增加。
 定義的測試圖表包含網路模擬器（DU/RU/拓撲服務器）、jenkins 或 python SDK 測試的 helm 圖表。
@@ -35,7 +36,7 @@ SMO 套件包含一些腳本來設定Node、安裝 smo/jenkins、啟動模擬器
 
 ![image](https://user-images.githubusercontent.com/84045975/198906927-d7e07a84-4292-412a-ae1c-65f2856df330.png)
 
-基礎環境需求，一個標準 VM 或 Kubernetes cluster 運行Ubuntu 的 Node (建議新版本)
+基礎環境需求，一個標準 VM 或 Kubernetes cluster 運行 Ubuntu 的 Node (建議新版本)
 （如有需要，cluster 也可以是遠程的，只要它可以從主機 VM 訪問）
 儲存庫的自述文件中說明了如何部署佈局，簡而言之它由以下部分組成：
 - helm 圖表用來部署
@@ -123,7 +124,8 @@ Job 被自動創建在 Gerrit reviews（gerrit）/ pull Requests（github），�
 要手動操作時，會需要登錄（剛剛那個覆寫檔案的預設帳密
 
 手動操作時，你可以提供儲存庫中 可以被 pull 的分支，以及 定義運行組件和測試覆寫文件 (Flavor) 的位置
-執行測試後，可以通過 Jenkins UI 來追蹤 pipeline execution 的狀況可以透過作業執行 UI 中可用的 workspace 訪問 Logs/results ，也可以通過 Jenkins 介面來訪問執行歷史記錄、趨勢和步驟詳細資訊
+執行測試後，可以通過 Jenkins UI 來追蹤 pipeline execution 的狀況 
+可以透過作業執行 UI 中可用的 workspace 訪問 Logs/results ，也可以通過 Jenkins 介面來訪問執行歷史記錄、趨勢和步驟詳細資訊
 ![image](https://user-images.githubusercontent.com/84045975/198907309-ad1f0630-e5f7-4993-bd9d-49a3dbb8e389.png)
 
 ### 3.了解測試
@@ -149,9 +151,4 @@ ONAP-Python-SDK4: https://wiki.o-ran-sc.org/download/attachments/47746045/onappy
 
 ## 參考
 https://wiki.o-ran-sc.org/display/OAM/OAM+Architecture#
-
-
-
-
-
-
+[易普斯龍](https://blog.csdn.net/qq43748322)
